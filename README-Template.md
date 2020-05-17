@@ -12,8 +12,10 @@ https://calulate-rate.herokuapp.com/
 
 # Technology Used
 
+```
 * Frontend Languages: HTML, CSS, flexbox , Javascript , React.js 
-* Tools Used : Command propmt , Visual Studio Code. 
+* Tools Used : Command propmt , Visual Studio Code.
+``` 
 
 ## Getting Started
 
@@ -21,7 +23,7 @@ This documentation will help you to run this project locally on your machine and
 
 
 ### Prerequisites
-```
+
 List of softwares and other modules you need to download.
 
 ```
@@ -29,6 +31,7 @@ List of softwares and other modules you need to download.
 * This github repository.
 * Node modules for the dependencies.
 ```
+
 
 ### Installing
 
