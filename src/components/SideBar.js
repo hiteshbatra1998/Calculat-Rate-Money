@@ -4,14 +4,14 @@ import {debounce } from 'lodash'
 import { changeTime , changeMoney } from './actions'
 class SideBar extends React.Component{
 
-    Change( a,b ){
-        this.props.mo(a);
-        this.props.ti(b);
+    Change( money,time ){
+        this.props.mo(money);
+        this.props.ti(time);
     }
     renderList = debounce( ( ele ) =>{
         if(ele){
         return ele.map( (list , key) =>{
-            return <div className="list-data-row" onClick={ ()=>this.Change( list[0] , list[1]  ) }> 
+            return <div className="list-data-row" key={key} onClick={ ()=>this.Change( list[0] , list[1]  ) }> 
                         <div>${list[0]} </div>
                         <div>{list[1]} months</div>  
                     </div>
