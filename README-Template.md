@@ -12,10 +12,10 @@ https://calulate-rate.herokuapp.com/
 
 # Technology Used
 
-```
+
 * Frontend Languages: HTML, CSS, flexbox , Javascript , React.js 
 * Tools Used : Command propmt , Visual Studio Code.
-``` 
+
 
 ## Getting Started
 
