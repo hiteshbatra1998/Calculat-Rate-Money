@@ -13,12 +13,9 @@ https://calulate-rate.herokuapp.com/
 # Technology Used
 
 ```
-
-* Frontend Languages: HTML, CSS, flexbox , Javascript , React.js 
-* Tools Used : Command propmt , Visual Studio Code.
-
+1) Frontend Languages: HTML, CSS, flexbox , Javascript , React.js 
+2) Tools Used : Command propmt , Visual Studio Code.
 ```
-
 
 ## Getting Started
 
@@ -30,9 +27,9 @@ This documentation will help you to run this project locally on your machine and
 List of softwares and other modules you need to download.
 
 ```
-* Node.js - For setting up the envirnment.
-* This github repository.
-* Node modules for the dependencies.
+1) Node.js - For setting up the envirnment.
+2) This github repository.
+3) Node modules for the dependencies.
 ```
 
 
@@ -42,26 +39,26 @@ A step by step series of examples that tell you how to get a development environ
 
 Installing Node.js
 
-```
+
 * [For Windows](https://phoenixnap.com/kb/install-node-js-npm-on-windows) - See the steps from this document.
 * [For Ubuntu](https://www.e2enetworks.com/help/how-to-install-nodejs-npm-on-ubuntu/) - See the steps from this document.
 * [For Mac ](https://blog.teamtreehouse.com/install-node-js-npm-mac) - See the steps from this document.
 
-```
+
 
 To Download repository.
 
-```
+
 * [Download the repository from here.](https://github.com/hiteshbatra1998/Calculat-Rate-Money)
-```
+
 
 For Downloading node modules
 
-```
+
 * Open the terminal (ubuntu or mac) or command propmpt(windows).
 * Go inside the directory of the downloaded repository.
 * npm install i - command to be written to download node modules having dependencies in package.json file.
-```
+
 
 
 Wait for some time to get node modules installed. Now you are ready with your project and just one command needed to run the project.
