@@ -1,4 +1,4 @@
-# Calculate Rate And Monthy Payment
+# EMI Calculator (Rate And Monthy Payment)
 
 User can calculate the rate of interest and monthly payment by only giving principal amount and time as input and no further user interaction is required. Previous results are also stored and user can click on them to see their results again.
 
