@@ -9,11 +9,11 @@ class TakeInput extends React.Component {
     this.props.mo(newValue)
   };
   const handleInputMoney =  (event , newValue) => {
-    if( event.target.value>500 ){
+    if( event.target.value>=500 && event.target.value<=5000 ){
       this.props.mo(event.target.value)
     }
     else{
-      alert( 'money should be grater than 500' )
+      alert( 'money should be grater than 500 and less than 5000' )
     }
   };
 
@@ -21,11 +21,11 @@ class TakeInput extends React.Component {
     this.props.ti(newValue)
   };
   const handleInputTime = (event , newValue) => {
-    if( event.target.value>=6 ){
+    if( event.target.value>=6 && event.target.value<=24  ){
     this.props.ti(event.target.value)
     }
     else{
-      alert('Time should be greater than 6')
+      alert('Time should be greater than 6 and less than 24')
     }
   };
   
@@ -34,8 +34,8 @@ class TakeInput extends React.Component {
       <div>
     <div className="take-input-outer">
         <div className="money-input-div">
-            <div>Enter Money</div>
-            <Input
+            <div className="input-head">Enter Money :</div>
+            <Input className="input-field-div"
                 value={this.props.money }
                 margin="dense"
                 onChange={handleInputMoney}
@@ -52,8 +52,8 @@ class TakeInput extends React.Component {
             />   
         </div>
         <div className="time-input-div">
-        <div>Enter Time</div>
-            <Input
+        <div className="input-head">Enter Time :</div>
+            <Input className="input-field-div"
                 value={this.props.time }
                 margin="dense"
                 onChange={handleInputTime}

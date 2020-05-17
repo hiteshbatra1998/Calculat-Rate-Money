@@ -37,16 +37,20 @@ class ShowResult extends React.Component{
     render(){
       
         return (
-            <div>
-                <br/>
-                money : {this.props.money}
-                <br/>
-                time : {this.props.time}
-                <br/>
-                rate : {this.props.rate}
-                <br/>
-                payment : {this.props.payment}
-                <br/>
+            <div className="show-result-data">
+                <div className="common-flex">
+                    <div className="common-bold">Principal Amount :</div> <div> ${this.props.money} </div>
+                </div>
+                <div className="common-flex">
+                    <div className="common-bold">Duration :</div> <div> {this.props.time} months </div>
+                </div>
+                <div className="common-flex">
+                    <div className="common-bold">Rate :</div> <div> {this.props.rate}% </div>
+                </div>
+                <div className="common-flex">
+                    <div className="common-bold">Monthly Payment :</div> <div> ${this.props.payment} </div>
+                </div>
+                
             </div>
         )
     }

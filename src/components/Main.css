@@ -1,36 +1,279 @@
 body{
     margin: 0;
-    padding: 0;
+    font-family :Spectral;
+}
+#root{
+    height: 100vh;
+}
+.main-head{
+    padding-top: 5px;
+    font-size: 42px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
 }
 .main-div{
-    margin: 00px;
-    background-color: #00EAB5;
-    height:100vh;
+    background:linear-gradient(180deg,#ffa37d,#ff637c);
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 90vw;
+    height: 85vh;
+    box-shadow: 0 35px 70px 0 rgba(255,163,125,.65), 0 30px 40px -10px rgba(255,100,124,.55);
+    border-radius: 10px;
+}
+.main-inner-div{
     display: flex;
+    position: relative;
+    padding: 0px 40px;
 }
 .calculated-div{
-    background-color: #F5F7FB;
-    padding: 20px;
-    width: 50vw;
-    height: 25vh;
-    margin-top: 200px;
+    background-color: white;
     border-radius: 10px;
+    height: fit-content;
+    width:50vw;
+    position: absolute;
+    right: 100px;
+    top:50%;
+    transform: translate(0,-50%);
+    padding:30px 30px;
 }
 .take-input-outer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+.input-head{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 .money-input-div , .time-input-div{
     width: 40%;
 }
 .side-bar-outer{
-    margin: 50px 100px 50px 20px;
-    background-color: #F5F7FB;
-    width: 20vw;
+    background-color: white;
     overflow-y: scroll;
     overflow-x: hidden;
+    height: 65vh;
+    width:15vw;
+    border-radius: 10px;
+    padding: 0px 10px 10px 10px;
+    
 }
 .side-bar-outer::-webkit-scrollbar {
     display: none !important;
-  }
+}
+.side-main{
+    position: relative;
+}
+.side-bar-head{
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    position: fixed;
+    background-color: white;
+    text-align: center;
+    z-index: 9999;
+    width: 15vw !important;
+   
+   width: fit-content;
+}
+.side-bar-list{
+    padding-top: 70px;
+}
+.list-data-row{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.input-field-div{
+    
+    padding-top:10px !important;
+    padding-left: 10px !important;
+    width: 100% !important;
+    padding-right: 10px !important;
+    margin-bottom: 10px;
+}
+.MuiInput-underline:before{
+    border: 1px solid black !important;
+    padding-top:15px !important;
+    padding-bottom: -5px !important;
+}
+.MuiInput-underline:after{
+    border: 0px solid blue !important;
+    padding-top:15px !important;
+    padding-bottom: -5px !important;
+}
+.MuiSlider-root{
+    color:#ff637c !important;
+}
+.show-result-data{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.common-bold{
+    font-weight: bold;
+}
+.common-flex{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   margin-bottom: 5px;
+}
+
+@media only screen and (max-width : 1000px){
+    .side-bar-outer {
+        width: auto;
+    }
+    .calculated-div{
+    background-color: white;
+    border-radius: 10px;
+    height: fit-content;
+    width: 40vw;
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: translate(0,0);
+    padding: 10px 30px;
+    
+    }
+    .main-head{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .main-div {
+        height: 90vh;
+    }
+    .side-bar-outer{
+        height: 70vh;
+        width: 20vw;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: 40px;
+    }
+    .main-inner-div{
+        flex-direction: row;
+    }
+    .input-head{
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    .input-field-div{
+        margin-bottom: 0 !important;
+    }
+    .side-bar-head{
+        width: 26vw !important;
+        font-size: 18px;
+        left:40px;
+    }
+    .show-result-data{
+        margin-top: -10px;
+    }
+    .common-bold{
+        font-weight: normal;
+    }
+    .take-input-outer{
+        flex-direction: column;
+    }
+    .money-input-div, .time-input-div{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .main-div{
+        width: 95vw;
+    }
+    .calculated-div{
+        padding:10px 20px;
+        width: 43vw;
+    }
+    .main-inner-div {
+        padding:0 20px;
+    }
+    .side-bar-outer {
+        margin-right: 65px;
+        width: 23vw;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .side-bar-head {
+        width: 24vw !important;
+        left: 27px;
+    }
+}
+
+@media only screen and (max-width:580px){
+    .main-div{
+        width: 95vw;
+    }
+    .calculated-div{
+        padding:10px 20px;
+        width: 40vw;
+    }
+    .main-inner-div {
+        padding:0 20px;
+    }
+    .side-bar-outer {
+        margin-right: 35px;
+        width: 27vw;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .side-bar-head {
+        width: 27vw !important;
+        left: 27px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .main-div{
+        width: 95vw;
+        height: 95vh;
+    }
+    .calculated-div{
+        padding:10px 10px;
+        width: 50vw;
+    }
+    .main-inner-div {
+        padding:0 10px;
+    }
+    .side-bar-outer {
+        margin-right: 15px;
+        width: 35vw;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .side-bar-head {
+        width: 32vw !important;
+        left: 18px;
+    }
+    .main-head{
+        font-size: 28px;
+    }
+    .common-flex{
+        flex-direction: column;
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
+    .list-data-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .side-bar-list {
+        padding-top: 95px;
+    }
+    .common-bold{
+        font-weight: bold;
+    }
+    .input-head , .show-result-data .list-data-row    {
+        font-size: 15px;
+    }
+}

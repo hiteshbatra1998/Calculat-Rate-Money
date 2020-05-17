@@ -7,14 +7,17 @@ class App extends React.Component{
     render(){
         
         return <div className="main-div">
-                <div className="side-bar-outer">
-                    <SideBar />
+                    <div className="main-head">RATE CALCULATOR</div>
+                    <div className="main-inner-div">
+                        <div className="side-bar-outer">
+                            <SideBar />
+                        </div>
+                        <div className="calculated-div">
+                            <TakeInput />
+                            <ShowResult  />
+                        </div>
+                    </div>
                 </div>
-                <div className="calculated-div">
-                    <TakeInput />
-                    <ShowResult  />
-                 </div>
-            </div>
     }
 }
 

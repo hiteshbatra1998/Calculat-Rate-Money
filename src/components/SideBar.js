@@ -11,16 +11,21 @@ class SideBar extends React.Component{
     renderList = debounce( ( ele ) =>{
         if(ele){
         return ele.map( (list , key) =>{
-            return <div onClick={ ()=>this.Change( list[0] , list[1]  ) }  > {list[0]} , {list[1]}  </div>
+            return <div className="list-data-row" onClick={ ()=>this.Change( list[0] , list[1]  ) }> 
+                        <div>${list[0]} </div>
+                        <div>{list[1]} months</div>  
+                    </div>
         } )
         }
     },500)
     render(){
         
         return (
-            <div>
-            <div> Previous Values </div>
-            {this.renderList( JSON.parse(localStorage.getItem('money')) )}
+            <div className="side-main">
+            <div className="side-bar-head"> Previous Values </div>
+            <div className="side-bar-list">
+                {this.renderList( JSON.parse(localStorage.getItem('money')) )}
+            </div>
             </div>
         )
     }
