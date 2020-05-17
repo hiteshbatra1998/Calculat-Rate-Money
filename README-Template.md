@@ -21,7 +21,7 @@ This documentation will help you to run this project locally on your machine and
 
 
 ### Prerequisites
-
+```
 List of softwares and other modules you need to download.
 
 ```
