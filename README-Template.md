@@ -37,7 +37,7 @@ List of softwares and other modules you need to download.
 
 A step by step series of examples that tell you how to get a development environment running
 
-Installing Node.js
+1)Installing Node.js
 
 
 * [For Windows](https://phoenixnap.com/kb/install-node-js-npm-on-windows) - See the steps from this document.
@@ -46,13 +46,13 @@ Installing Node.js
 
 
 
-To Download repository.
+2)To Download repository.
 
 
 * [Download the repository from here.](https://github.com/hiteshbatra1998/Calculat-Rate-Money)
 
 
-For Downloading node modules
+3)For Downloading node modules
 
 
 * Open the terminal (ubuntu or mac) or command propmpt(windows).
@@ -88,27 +88,18 @@ You can easily deploy this React.js project by linking your github repository wi
 * [redux ^4.0.5](https://redux.js.org/) - To create a store of states defined in reducers.
 
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Version
 
-## Versioning
+The first version is developed. UI can be improved in other versions.
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is not licensed.
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+I hereby acknowledge that all the code was written from scratch and some help was taken from the internet.
+
 
