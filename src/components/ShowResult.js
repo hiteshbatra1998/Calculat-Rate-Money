@@ -6,7 +6,7 @@ import { changeRate , changePayment } from './actions'
 class ShowResult extends React.Component{
   
   componentWillMount = debounce( ()=> {
-    
+    if( this.props.money>=500 && this.props.money<=5000 &&  this.props.time>=6 && this.props.time<=24 ){
     
     axios.get(`https://ftl-frontend-test.herokuapp.com/interest?amount=${this.props.money}&numMonths=${this.props.time}`)
       .then(response => {
@@ -15,9 +15,13 @@ class ShowResult extends React.Component{
       })
       .catch(error => {
         console.log(error);
-      });
+      })}
+      else{
+        alert('Money is to be in between 500 to 5000 and time in between 6 to 24')
+      }
     },500);
       componentDidUpdate = debounce( async ()=> {
+        if( this.props.money>=500 && this.props.money<=5000 &&  this.props.time>=6 && this.props.time<=24 ){
         axios.get(`https://ftl-frontend-test.herokuapp.com/interest?amount=${this.props.money}&numMonths=${this.props.time}`)
           .then(response => {
             this.props.ra(  response.data.interestRate )
@@ -31,8 +35,11 @@ class ShowResult extends React.Component{
           })
           .catch(error => {
             console.log(error);
-          });
-      },500);
+          })}
+          else{
+            alert('Money is to be in between 500 to 5000 and time in between 6 to 24')
+          }
+      },1000);
        
     render(){
       

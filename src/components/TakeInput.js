@@ -9,24 +9,14 @@ class TakeInput extends React.Component {
     this.props.mo(newValue)
   };
   const handleInputMoney =  (event , newValue) => {
-    if( event.target.value>=500 && event.target.value<=5000 ){
       this.props.mo(event.target.value)
-    }
-    else{
-      alert( 'money should be grater than 500 and less than 5000' )
-    }
   };
 
   const handleSliderTime = (event,newValue) => {
     this.props.ti(newValue)
   };
   const handleInputTime = (event , newValue) => {
-    if( event.target.value>=6 && event.target.value<=24  ){
     this.props.ti(event.target.value)
-    }
-    else{
-      alert('Time should be greater than 6 and less than 24')
-    }
   };
   
   
