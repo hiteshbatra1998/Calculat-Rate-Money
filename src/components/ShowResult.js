@@ -14,12 +14,10 @@ class ShowResult extends React.Component{
         this.props.pa(  response.data.monthlyPayment.amount)
       })
       .catch(error => {
-        console.log(error);
+        alert(error);
       })}
       else{
         alert('Money is to be in between 500 to 5000 and time in between 6 to 24')
-        this.props.ra(  0)
-        this.props.pa( 0)
       }
     },500);
       componentDidUpdate = debounce( async ()=> {
@@ -36,10 +34,13 @@ class ShowResult extends React.Component{
             localStorage.setItem('money', JSON.stringify(oldItems));
           })
           .catch(error => {
-            console.log(error);
+            alert(error);
           })}
           else{
+            
             alert('Money is to be in between 500 to 5000 and time in between 6 to 24')
+            this.props.ra(  0)
+            this.props.pa( 0)
           }
       },1000);
        
