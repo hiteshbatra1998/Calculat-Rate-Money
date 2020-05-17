@@ -18,6 +18,8 @@ class ShowResult extends React.Component{
       })}
       else{
         alert('Money is to be in between 500 to 5000 and time in between 6 to 24')
+        this.props.ra(  0)
+        this.props.pa( 0)
       }
     },500);
       componentDidUpdate = debounce( async ()=> {
