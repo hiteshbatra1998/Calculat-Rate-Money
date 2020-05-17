@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+    margin: 00px;
+    background-color: #00EAB5;
+    height:100vh;
+    display: flex;
+}
+.calculated-div{
+    background-color: #F5F7FB;
+    padding: 20px;
+    width: 50vw;
+    height: 25vh;
+    margin-top: 200px;
+    border-radius: 10px;
+}
+.take-input-outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.money-input-div , .time-input-div{
+    width: 40%;
+}
+.side-bar-outer{
+    margin: 50px 100px 50px 20px;
+    background-color: #F5F7FB;
+    width: 20vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.side-bar-outer::-webkit-scrollbar {
+    display: none !important;
+  }
