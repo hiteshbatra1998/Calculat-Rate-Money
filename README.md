@@ -8,7 +8,7 @@ https://github.com/hiteshbatra1998/Calculat-Rate-Money
 
 # Project Link
 
-https://calulate-rate.herokuapp.com/ 
+https://calculate-emi.herokuapp.com/ 
 
 # Technology Used
 
