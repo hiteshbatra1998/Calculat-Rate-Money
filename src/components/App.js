@@ -7,7 +7,7 @@ class App extends React.Component{
     render(){
         
         return <div className="main-div">
-                    <div className="main-head">RATE CALCULATOR</div>
+                    <div className="main-head">EMI CALCULATOR</div>
                     <div className="main-inner-div">
                         <div className="side-bar-outer">
                             <SideBar />

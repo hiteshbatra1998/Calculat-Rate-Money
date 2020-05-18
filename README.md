@@ -1,7 +1,10 @@
-# EMI Calculator (Rate And Monthy Payment)
+# Calculate Rate And Monthy Payment
 
-User can calculate the rate of interest, monthly payment, total amount and interest you will be paying by only giving principal amount and time as input and no further user interaction is required. Previous results are also stored and user can click on them to see their results again.
+User can calculate the rate of interest and monthly payment by only giving principal amount and time as input and no further user interaction is required. Previous results are also stored and user can click on them to see their results again.
 
+# Github Repository 
+
+https://github.com/hiteshbatra1998/Calculat-Rate-Money
 
 # Project Link
 
@@ -10,7 +13,7 @@ https://calulate-rate.herokuapp.com/
 # Technology Used
 
 ```
-1) Frontend Technology: HTML, CSS, flexbox , Javascript , React.js 
+1) Frontend Languages: HTML, CSS, flexbox , Javascript , React.js 
 2) Tools Used : Command propmt , Visual Studio Code.
 ```
 
@@ -24,7 +27,7 @@ This documentation will help you to run this project locally on your machine and
 List of softwares and other modules you need to download.
 
 ```
-1) Node.js and NPM - For setting up the envirnment.
+1) Node.js - For setting up the envirnment.
 2) This github repository.
 3) Node modules for the dependencies.
 ```
@@ -34,7 +37,7 @@ List of softwares and other modules you need to download.
 
 A step by step series of examples that tell you how to get a development environment running
 
-1)Installing Node.js and NPM
+1)Installing Node.js
 
 
 * [For Windows](https://phoenixnap.com/kb/install-node-js-npm-on-windows) - See the steps from this document.
@@ -54,10 +57,7 @@ A step by step series of examples that tell you how to get a development environ
 
 * Open the terminal (ubuntu or mac) or command propmpt(windows).
 * Go inside the directory of the downloaded repository.
-* command to be written to download node modules having dependencies in package.json file:-
-```
-npm install i
-```
+* npm install i - command to be written to download node modules having dependencies in package.json file.
 
 
 
@@ -101,3 +101,5 @@ This project is not licensed.
 ## Acknowledgments
 
 I hereby acknowledge that all the code was written from scratch and some help was taken from the internet.
+
+

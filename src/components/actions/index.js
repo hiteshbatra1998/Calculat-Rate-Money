@@ -23,3 +23,15 @@ export const changePayment =(el)=>{
         payload:el
     }
 }
+export const changeInterest =(el)=>{
+    return {
+        type : 'INTEREST',
+        payload:el
+    }
+}
+export const changeTotal =(el)=>{
+    return {
+        type : 'TOTAL',
+        payload:el
+    }
+}

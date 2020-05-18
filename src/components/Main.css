@@ -107,7 +107,7 @@ body{
     padding-bottom: -5px !important;
 }
 .MuiInput-underline:after{
-    border: 0px solid blue !important;
+    border: 0px solid #ff637c !important;
     padding-top:15px !important;
     padding-bottom: -5px !important;
 }
@@ -127,10 +127,20 @@ body{
    align-items: center;
    margin-bottom: 5px;
 }
-
+.input-max-min-div{
+    color:#ff637c;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15px;
+    font-size: 16px;
+}
 @media only screen and (max-width : 1000px){
     .side-bar-outer {
         width: auto;
+    }
+    .input-max-min-div{
+        margin-top: -25px;
+        font-size: 15px;
     }
     .calculated-div{
     background-color: white;
@@ -174,7 +184,7 @@ body{
         left:40px;
     }
     .show-result-data{
-        margin-top: -10px;
+        margin-top: 5px;
     }
     .common-bold{
         font-weight: normal;
@@ -275,5 +285,9 @@ body{
     }
     .input-head , .show-result-data .list-data-row    {
         font-size: 15px;
+    }
+    .input-max-min-div{
+        margin-top: -25px;
+        font-size: 14px;
     }
 }

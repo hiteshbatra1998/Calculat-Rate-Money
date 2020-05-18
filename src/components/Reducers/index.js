@@ -4,8 +4,18 @@ let money = 800;
 let time = 8;
 let rate = 0;
 let payment = 0;
+let interest =0;
+let total= 0;
 export const handleMoney=(state=money , action )=>{
     if( action.type==='MONEY' ){
+        let newState=state;
+        newState=action.payload;
+        return newState;
+    }
+    return state;
+}
+export const handleInterest=(state=interest , action )=>{
+    if( action.type==='INTEREST' ){
         let newState=state;
         newState=action.payload;
         return newState;
@@ -39,9 +49,20 @@ export const handlePayment=(state=payment , action )=>{
     return state;
 }
 
+export const handleTotal=(state=total , action )=>{
+    if( action.type==='TOTAL' ){
+        let newState=state;
+        newState=action.payload;
+        return newState;
+    }
+    return state;
+}
+
 export default combineReducers({
     handleMoney,
     handleTime,
     handlePayment,
-    handleRate
+    handleRate,
+    handleInterest,
+    handleTotal
 })
